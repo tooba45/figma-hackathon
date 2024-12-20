@@ -17,19 +17,19 @@ const Header = () => {
     <header>
          {/* Navbar start */}
    <div className='border-b-[1px]  border-x-neutral-200 pb-7 '> 
-       <div className='mt-14 pl-[20px] ml-10 flex'>
+       <div className='mt-14 pl-[20px] ml-10 flex items-center'>
         <Image src="/logo/Logo.png" alt="logo" width={50} height={32}/>
             <h1 className='font-bold w-[118px] ml-2 h-[24px] text-3xl'>Furniro</h1>
             
             
   {/* Mobile Navigation Menu */}
-            <button className='lg:hidden block ml-20 pl-36'  onClick={() => setIsMenuOpen(!isMenuOpen)}> 
+            <button className='lg:hidden block ml-auto'  onClick={() => setIsMenuOpen(!isMenuOpen)}> 
   <Image src="/icons/Menu.png" alt="menu" width={24} height={24}/> </button>
 
 
 
  {isMenuOpen && (
-            <div className="absolute top-0 left-0 w-full bg-white p-5 z-50">
+            <div className="absolute top-0 left-0 w-full bg-white p-5 lg:hidden z-50">
               <nav className="flex flex-col gap-5 text-center">
                 <Link href="/" className='hover:underline'>Home</Link>
                 <Link href="#Shop" className='hover:underline'>Shop</Link>
@@ -44,19 +44,20 @@ const Header = () => {
 
 
 {/* Screen Navigation */}
-<div className='w-[600px] ml-4 max-sm:hidden  '>
+<div className='w-[600px] hidden lg:flex ml-4  '>
             <nav className='flex text-black text-xl items-center  justify-between sm:w-[687px]  pl-44 '>
-        <Link href={"/"} className='hover:underline'>Home</Link>
-        <Link href={"#Shop"} className='hover:underline'>Shop</Link>
-        <Link href={"#Blog"} className='hover:underline'>Blog</Link>
-        <Link href={"#Contact"} className='hover:underline'>Contact</Link>
+        <Link href="/" className='hover:underline'>Home</Link>
+        <Link href="#Shop" className='hover:underline'>Shop</Link>
+        <Link href="#Blog" className='hover:underline'>Blog</Link>
+        <Link href="#Contact" className='hover:underline'>Contact</Link>
         </nav>
         </div>
 
 
        
+       {/* Icons */}
+        <div className=' ml-auto gap-8 hidden lg:flex'>
 
-      <div className='flex  max-sm:hidden ml-60 gap-[40px] '>
         <TbUserExclamation className='  h-[28px] w-[28px]' />
 
         <LuSearch className='    h-[28px] w-[28px]' />

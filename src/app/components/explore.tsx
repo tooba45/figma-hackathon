@@ -6,11 +6,11 @@ import { GoArrowRight } from "react-icons/go";
 const Explore = () => {
   return (
     <div className='mt-8'>
-      <div className='flex min-sm:flex-row min-sm:h-auto items-center bg-[#FFF3E3] h-[670px] w-full'>
+      <div className='flex flex-col sm:flex-row justify-center items-center bg-[#FFF3E3] lg:h-[670px]  sm:w-full'>
       
 
          {/* Explore Now */}
-            <div className='pt-[60px]  pl-[70px] bg-[#FFF3E3]'>
+            <div className='py-[40px] pl-16  bg-[#FFF3E3]'>
             <h1 className='text-[#000000] w-[500px] font-bold text-[40px]'>50+ Beautiful rooms 
             inspiration</h1>
             <p className='w-[368px]  text-[#616161] mt-4'>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
@@ -18,7 +18,7 @@ const Explore = () => {
             </div>
 
          {/* Images 1   */}
-         <div>
+         <div className='lg:block hidden'>
             <div className='w-[400px] h-[582px]' style={{backgroundImage: "url('/images/Explore1.png')", 
         backgroundSize: 'cover', 
         backgroundPosition: 'center',}}> 
@@ -29,7 +29,7 @@ const Explore = () => {
 
 
         {/* Images 2 */}
-        <div className='ml-4'>
+        <div className='ml-4 lg:block hidden'>
             <Image   src="/images/Explore2.png" alt="explore" width={372} height={486}/>
             <Image className="mt-6" src="/dots/Indicator.png" alt="indicator" width={120} height={27}/>
 

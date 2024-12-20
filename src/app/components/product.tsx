@@ -16,11 +16,11 @@ const Product = () => {
 
 
 {/* Products list */}
-         <div className='flex-col max-sm:gird-col-2 '>
+         <div className='flex-col sm:gird-col-2 '>
 
 
             {/* 1st Raw */}
-          <div className='flex max-sm:justify-center flex-wrap min-sm:grid min-sm:grid-cols-2 min-sm:gap-4 mt-8 ml-[40px] gap-[32px]'>
+          <div className='flex justify-center flex-wrap  mt-8 ml-[40px] gap-[32px]'>
 
 
 
@@ -29,7 +29,7 @@ const Product = () => {
             
               <div className='w-[285px] h-[301px]' style={{backgroundImage: "url('/products/image1.png')", 
                 backgroundSize: 'cover', backgroundPosition: 'center',}}> 
-                        <div className='ml-[213px]'><Image src="/label/30Label.png" alt="" width={48} height={48}/></div>
+                        <div className='ml-[213px] pt-6'><Image src="/label/30Label.png" alt="" width={48} height={48}/></div>
                </div>
 
                <div className='pl-4 '>
@@ -163,10 +163,9 @@ const Product = () => {
 
 
 
-
-
           {/* 2nd Raw */}
-          <div className='flex mt-8  max-sm:hidden ml-[40px] gap-[32px]'>
+          <div className='flex justify-center flex-wrap  mt-8 ml-[40px] gap-[32px]'>
+
 
             {/* Grifo */}
             <div className='w-[285px] h-[446px]  relative group bg-[#F4F5F7]'>
