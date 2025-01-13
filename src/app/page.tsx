@@ -8,12 +8,11 @@ import Furniture from "./components/furniture";
 export default function Home() {
   return (
 <div>
-  <Header/>
+
   <Hero/>
   <Product/>
   <Explore/>
   <Furniture/>
-  <Footer/>
 </div>
   );
 }

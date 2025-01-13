@@ -14,7 +14,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header>
+    <header >
          {/* Navbar start */}
    <div className='border-b-[1px]  border-x-neutral-200 pb-7 '> 
        <div className='mt-14 pl-[20px] ml-10 flex items-center'>
@@ -32,9 +32,9 @@ const Header = () => {
             <div className="absolute top-0 left-0 w-full bg-white p-5 lg:hidden z-50">
               <nav className="flex flex-col gap-5 text-center">
                 <Link href="/" className='hover:underline'>Home</Link>
-                <Link href="#Shop" className='hover:underline'>Shop</Link>
-                <Link href="#Blog" className='hover:underline'>Blog</Link>
-                <Link href="#Contact" className='hover:underline'>Contact</Link>
+                <Link href="/shop" className='hover:underline'>Shop</Link>
+                <Link href="/blog" className='hover:underline'>Blog</Link>
+                <Link href="/contact" className='hover:underline'>Contact</Link>
               </nav>
             </div>
           )}
@@ -47,9 +47,9 @@ const Header = () => {
 <div className='w-[600px] hidden lg:flex ml-4  '>
             <nav className='flex text-black text-xl items-center  justify-between sm:w-[687px]  pl-44 '>
         <Link href="/" className='hover:underline'>Home</Link>
-        <Link href="#Shop" className='hover:underline'>Shop</Link>
-        <Link href="#Blog" className='hover:underline'>Blog</Link>
-        <Link href="#Contact" className='hover:underline'>Contact</Link>
+        <Link href="/shop" className='hover:underline'>Shop</Link>
+        <Link href="/blog" className='hover:underline'>Blog</Link>
+        <Link href="/contact" className='hover:underline'>Contact</Link>
         </nav>
         </div>
 
