@@ -3,10 +3,11 @@ import Banner from '../components/banner'
 import { FaRegUser } from "react-icons/fa";
 import { BsCalendarDateFill } from "react-icons/bs";
 import { FaTag } from "react-icons/fa6";
-import { FiSearch } from "react-icons/fi";
 
 
 import Image from 'next/image'
+import CategorySection from './CategorySection';
+import RecentPost from './RecentPost';
 
 const blog = () => {
   return (
@@ -24,7 +25,7 @@ const blog = () => {
                 <p>Blog</p></div>
                 </div>
 
-<div className=''>
+<div className='   flex flex-wrap justify-between'>
 
 <div>
 
@@ -79,13 +80,9 @@ const blog = () => {
 
 </div>
 
-<div>
-
-            <div className='relative flex items-center   '>
-
-            <input type="text"  className='pl-6 py-2  w-[280px] bg-[#F7F7F7] '/>
-                      <FiSearch  className='absolute ml-60 h-[24px] w-[24px]' />
-            </div>
+<div className='flex flex-col md:flex-row lg:flex-col gap-10 mx-auto mt-20 lg:mx-0'>
+   <CategorySection/>
+   <RecentPost/>
 </div>
 </div>
 
