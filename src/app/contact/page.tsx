@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../components/banner'
 import Image from 'next/image'
+import ContactSection from './ContactSection'
 
 const contact = () => {
   return (
@@ -18,6 +19,7 @@ const contact = () => {
                       <p>Contact</p></div>
                       </div>
 
+                <ContactSection/>
 
                 <div className='mt-10 hidden lg:block'><Banner/></div> 
     </div>
