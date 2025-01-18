@@ -6,7 +6,7 @@ import { GoArrowRight } from "react-icons/go";
 const Explore = () => {
   return (
     <div className='mt-8'>
-      <div className='flex flex-col sm:flex-row justify-center items-center bg-[#FFF3E3] lg:h-[670px]  sm:w-full'>
+      <div className='flex flex-col w-[300px] sm:flex-row justify-center items-center bg-[#FFF3E3] lg:h-[670px]  lg:w-full'>
       
 
          {/* Explore Now */}

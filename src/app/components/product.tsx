@@ -20,7 +20,7 @@ const Product = () => {
 
 
             {/* 1st Raw */}
-          <div className='flex justify-center flex-wrap  mt-8 ml-[40px] gap-[32px]'>
+          <div className='flex justify-center flex-wrap  mt-8  gap-[32px]'>
 
 
 
@@ -164,7 +164,7 @@ const Product = () => {
 
 
           {/* 2nd Raw */}
-          <div className='flex justify-center flex-wrap  mt-8 ml-[40px] gap-[32px]'>
+          <div className='flex justify-center flex-wrap  mt-8  gap-[32px]'>
 
 
             {/* Grifo */}
