@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -27,7 +28,8 @@ const Hero = () => {
             <p className='w-[400px] hidden sm:block text-[#333333] mt-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
             <p className='w-[250px] lg:w-[250px] block sm:hidden text-[#333333] mt-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-            <button className='bg-[#c2952c]  border-[#eccd82] border-[2px] mt-[48px] py-6  px-16 font-bold text-white'>BUY NOW</button>
+            <button className='bg-[#c2952c]  border-[#eccd82] border-[2px] mt-[48px] py-6  px-16 font-bold text-white'>
+              <Link href="/shop">BUY NOW</Link></button>
             </div>
           </div>
 
@@ -38,7 +40,7 @@ const Hero = () => {
 
 
       {/* Hero's Part 2 */}
-<div className='mt-14'>
+<div className='mt-14 text-center'>
   <h1 className='flex justify-center pl-4 font-bold text-[32px] sm:text-[28px] md:text-[32px] lg:text-[32px]'>Browse The Range</h1>
   <p className='text-[#666666] flex justify-center '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 

@@ -1,16 +1,14 @@
-import Header from "./components/header";
-import Footer from "./components/footer";
 import Hero from "./components/hero";
-import Product from "./components/product";
 import Explore from "./components/explore";
 import Furniture from "./components/furniture";
+import Items from "./components/items";
 
 export default function Home() {
   return (
 <div>
 
   <Hero/>
-  <Product/>
+  <Items/>
   <Explore/>
   <Furniture/>
 </div>
