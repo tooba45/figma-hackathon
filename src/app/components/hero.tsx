@@ -7,7 +7,7 @@ const Hero = () => {
     <div>
 
       {/* Hero's Part 1 */}
-     <div className='flex  items-end'>
+     <div className='flex '>
         {/* BackGround-Image */}
 
       <div style={{backgroundImage: "url('/images/background.png')", 
@@ -17,9 +17,9 @@ const Hero = () => {
 
         {/* Another-div */}
 
-        <div className='lg:w-[643px] w-[400px] ml-[20px] sm:ml-[50px] md:ml-[150px] lg:ml-[650px] mt-[160px] h-[500px] bg-[#FFF3E3]'>
-            <div className='pt-[60px]  pl-[70px]'>
-            <h2 className='text-[#333333] font-semibold  justify-between tracking-widest'>New Arrival</h2>
+        <div className='lg:w-[643px] w-[319px]  sm:ml-[50px] md:ml-[150px] lg:ml-[650px] mt-[160px] h-[500px] bg-[#FFF3E3]'>
+            <div className='pt-[60px] px-4 lg:pl-[70px]'>
+            <h2 className='text-[#333333] font-semibold  justify-between tracking-tight'>New Arrival</h2>
 
             <h1 className='text-[#c2952c] w-[300px] lg:w-[400px] text-[40px] sm:text-[30px] lg:text-[52px] font-bold pt-4'>
                 Discover Our New Collection
@@ -40,11 +40,17 @@ const Hero = () => {
 
 
       {/* Hero's Part 2 */}
+<<<<<<< HEAD
 <div className='mt-14 text-center'>
   <h1 className='flex justify-center pl-4 font-bold text-[32px] sm:text-[28px] md:text-[32px] lg:text-[32px]'>Browse The Range</h1>
   <p className='text-[#666666] flex justify-center '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+=======
+<div className='mt-14'>
+  <h1 className='flex justify-center lg:pl-4 font-bold text-[28px]  md:text-[32px] lg:text-[32px]'>Browse The Range</h1>
+  <p className='text-[#666666] lg:w-full px-16 w-[310px] flex justify-center '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+>>>>>>> d3759dfd1771050070033d0e9963e979d4253730
 
-<div className='flex  gap-6 sm:pl-[8px]  mt-10 flex-wrap justify-center'>
+<div className='flex  gap-6 px-12  mt-10 flex-wrap justify-center'>
 
   <div ><Image src="/images/dinning.png" alt="dinning" width={381} height={500}/>
   <h3 className='mt-4 font-bold text-[20px] tracking-wide  text-[#333333] flex justify-center'>Dining</h3>
